@@ -56,7 +56,7 @@ export default function ProductShowcase() {
             className="flex gap-6"
             drag="x"
             dragConstraints={{
-              left: -850,
+              left: -970,
               right: 0
             }}
             style={{ x }}
