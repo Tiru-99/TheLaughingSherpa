@@ -42,7 +42,7 @@ export default function CustomerReviews() {
         
           </div>
           <div className="grid gap-4 md:gap-8 lg:grid-cols-2">
-            {reviews.map((review, index) => (
+            {reviews.map((review) => (
               <Card 
                 key={review.id} 
                 className="relative overflow-hidden transition-all hover:shadow-lg"
