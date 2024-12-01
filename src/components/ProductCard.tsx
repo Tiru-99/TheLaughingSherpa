@@ -38,7 +38,7 @@ export function ProductCard({
         <Image
           src={image}
           alt={name}
-          layout="fill"
+          fill
           objectFit="cover"
         />
       </div>
