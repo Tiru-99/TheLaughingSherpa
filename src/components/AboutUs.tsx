@@ -22,7 +22,7 @@ const AboutUs = () => {
         </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
           The Sherpas are more than just guides—they are the guardians of the
-          world's tallest peaks, facing extreme conditions with resilience and
+          world&apos;s tallest peaks, facing extreme conditions with resilience and
           unwavering spirit. Their selflessness has helped countless
           adventurers realize their dreams of reaching the impossible.
         </p>
