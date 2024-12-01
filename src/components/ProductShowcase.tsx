@@ -10,19 +10,19 @@ const products = [
     id: 1,
     name: "Scrambled Eggs",
     price: 45.46,
-    image: "/images/eggs.jpg"
+    image: "/images/eggs.JPG"
   },
   {
     id: 2,
     name: "Chicken Rice Soup",
     price: 45.46,
-    image: "/images/chickenrice.jpg"
+    image: "/images/chickenrice.JPG"
   },
   {
     id: 3,
     name: "Carrot Pudding",
     price: 45.46,
-    image: "/images/halwa.jpg"
+    image: "/images/halwa.JPG"
   }
 ]
 
