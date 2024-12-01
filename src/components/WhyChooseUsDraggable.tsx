@@ -26,6 +26,27 @@ export default function WhyChooseUsCarousel() {
       description: "Our meals are thoughtfully crafted, free from harmful chemicals and artificial additives and preservatives. You get pure, wholesome nutrition, just as nature intended.",
       image: "/images/local.jpg",
     },
+    {
+      title: "High-Quality Ingredients",
+      description: "We use only the finest ingredients, sourced with care to ensure every bite is packed with the nutrients you need for your outdoor adventures.",
+      image: "/images/highquality.jpg",
+    },
+    {
+      title: "Eco-Friendly Packaging",
+      description: " We’re as committed to preserving nature as you are. That’s why we use sustainable, biodegradable, and lightweight packaging to minimise waste, so you can explore the world without leaving a trace.",
+      image: "/images/ecofriendly.jpg",
+    },
+    {
+      title: "Convenient & Versatile",
+      description: "Quick to prepare with just water and heat, our meals are perfect for adventurers who need something simple, delicious, and mess-free, no matter where their journey takes them.",
+      image: "/images/candv.jpg",
+    },
+    {
+      title: "Supporting Mountain Communities",
+      description: "We proudly give back to the mountain communities that inspire us, working with local farmers and sustainable practices to support people and the environment.",
+      image: "/images/community.jpg",
+    },
+   
   ]
 
   return (
@@ -43,7 +64,7 @@ export default function WhyChooseUsCarousel() {
                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <Card className="border-0 shadow-none">
                     <CardContent className="p-4 md:p-6">
-                      <div className="aspect-[4/3] relative mb-4 md:mb-6 overflow-hidden ">
+                      <div className="aspect-[4/3] relative mb-4 md:mb-6 overflow-hidden rounded-lg">
                         <Image
                           src={feature.image}
                           alt={feature.title}

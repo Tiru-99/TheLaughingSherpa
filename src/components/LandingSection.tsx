@@ -78,7 +78,7 @@ export default function LandingSection(){
                             transition={{ duration: 0.5, delay: 1 }}
                         >
                             <Link
-                                href="#"
+                                href="https://wa.me/+9779802348523?text=Hello%20there!%20I'd%20like%20to%20contact%20you%20regarding%20The%20Laughing%20Sherpa."
                                 className="mt-8 md:-mt-24 inline-flex items-center gap-2 bg-[#FFB800] text-black px-6 py-3 rounded-full font-medium hover:bg-[#FFA500] transition-colors tracking-widest"
                             >
                                 FUEL YOUR ADVENTURE

@@ -1,33 +1,28 @@
 "use client"
 import { motion, useMotionValue } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowUpRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 const products = [
   {
     id: 1,
-    name: "Mushroom Coconut Curry",
+    name: "Scrambled Eggs",
     price: 45.46,
-    image: "/images/mushroom.jpg"
+    image: "/images/eggs.jpg"
   },
   {
     id: 2,
-    name: "Mushroom Coconut Curry",
+    name: "Chicken Rice Soup",
     price: 45.46,
-    image: "/images/mushroom.jpg"
+    image: "/images/chickenrice.jpg"
   },
   {
     id: 3,
-    name: "Mushroom Coconut Curry",
+    name: "Carrot Pudding",
     price: 45.46,
-    image: "/images/mushroom.jpg"
-  },
-  {
-    id: 4,
-    name: "Mushroom Coconut Curry",
-    price: 45.46,
-    image: "/images/mushroom.jpg"
+    image: "/images/halwa.jpg"
   }
 ]
 
@@ -45,9 +40,9 @@ export default function ProductShowcase() {
             <br />
             Products
           </h2>
-          <button className="size-16 bg-[#FFD84D] rounded-full flex items-center justify-center group transition-transform hover:scale-105">
+          <Link href='/products'><button className="size-16 bg-[#FFD84D] rounded-full flex mt-4 items-center justify-center group transition-transform hover:scale-105">
             <ArrowUpRight className="size-6 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </button>
+          </button></Link>
         </div>
 
         {/* Right Content - Draggable Carousel */}
@@ -56,7 +51,7 @@ export default function ProductShowcase() {
             className="flex gap-6"
             drag="x"
             dragConstraints={{
-              left: -970,
+              left: -650,
               right: 0
             }}
             style={{ x }}
@@ -102,9 +97,12 @@ export default function ProductShowcase() {
                         ${product.price.toFixed(2)}
                       </p>
                     </div>
-                    <Button className="w-full bg-white text-black border-2 border-black hover:bg-black hover:text-white transition-colors">
+                    <Link 
+                      href="https://wa.me/+9779802348523?text=Hello%20there!%20I'd%20like%20to%20contact%20you%20regarding%20The%20Laughing%20Sherpa." >
+                      <Button className="w-full bg-white text-black border-2 border-black hover:bg-black hover:text-white transition-colors">
                       Buy Now
                     </Button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
