@@ -10,16 +10,10 @@ const AboutUs = () => {
           About Us
         </h4>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-snug sm:leading-tight">
-          The Laughing Sherpa is a{" "}
-          <span className="relative inline-block">
-            <span
-              className="absolute inset-0 bg-yellow-400 opacity-50 -z-10 transform -skew-x-6"
-              aria-hidden="true"
-            ></span>
-            tribute to our deep affection
-          </span>{" "}
-          for the Himalayas.
+          The Laughing Sherpa: A Tribute to the Himalayas
         </h2>
+
+
         <p className="text-gray-400 leading-relaxed mb-4 text-sm sm:text-base">
           The Sherpas are more than just guides—they are the guardians of the
           world&apos;s tallest peaks, facing extreme conditions with resilience and
