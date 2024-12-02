@@ -14,6 +14,7 @@ interface ProductCardProps {
   protein: number
   prepTime: number
   category: string
+  href:string
 }
 
 export function ProductCard({ 
@@ -23,13 +24,14 @@ export function ProductCard({
   price, 
   calories, 
   protein, 
-  prepTime 
+  prepTime,
+  href
 }: ProductCardProps) {
 
     const router = useRouter(); 
 
-    const redirectToWhatsapp = () =>{
-        router.push("https://wa.me/+9779802348523?text=Hello%20there!%20I'd%20like%20to%20contact%20you%20regarding%20The%20Laughing%20Sherpa.")
+    const redirectToWhatsapp = (href:string) =>{
+        router.push(href)
     }
     
   return (
@@ -68,7 +70,7 @@ export function ProductCard({
         </div>
 
         <Button className="w-full bg-black hover:bg-gray-800 text-white" size="lg"
-        onClick={redirectToWhatsapp}>
+        onClick={()=>redirectToWhatsapp(href)}>
           Add to Cart
         </Button>
       </CardContent>

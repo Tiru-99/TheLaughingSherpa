@@ -10,19 +10,22 @@ const products = [
     id: 1,
     name: "Scrambled Eggs",
     price: 45.46,
-    image: "/images/eggs.JPG"
+    image: "/images/eggs.JPG",
+    href:"https://wa.me/+9779802348523?text=Hi%2C%20I%20want%20to%20enquire%20about%20Scrambled%20Egg%20from%20The%20Laughing%20Sherpa."
   },
   {
     id: 2,
     name: "Chicken Rice Soup",
     price: 45.46,
-    image: "/images/chickenrice.JPG"
+    image: "/images/chickenrice.JPG",
+    href:"https://wa.me/+9779802348523?text=Hi%2C%20I%20want%20to%20enquire%20about%20Chicken%20Rice%20Soup%20from%20The%20Laughing%20Sherpa."
   },
   {
     id: 3,
     name: "Carrot Pudding",
     price: 45.46,
-    image: "/images/halwa.JPG"
+    image: "/images/halwa.JPG",
+    href:"https://wa.me/+9779802348523?text=Hi%2C%20I%20want%20to%20enquire%20about%20Carrot%20Pudding%20from%20The%20Laughing%20Sherpa."
   }
 ]
 
@@ -31,7 +34,7 @@ export default function ProductShowcase() {
 
   return (
     <section className="container mx-auto py-16 px-4">
-      <div className="grid lg:grid-cols-[1fr,2fr] gap-8 items-center pl-12">
+      <div className="grid lg:grid-cols-[1fr,2fr] gap-8 items-center xl:pl-12">
         {/* Left Content */}
         <div className="space-y-6">
           <p className="text-xl text-muted-foreground">healthy and tasty!</p>
@@ -98,7 +101,7 @@ export default function ProductShowcase() {
                       </p>
                     </div>
                     <Link 
-                      href="https://wa.me/+9779802348523?text=Hello%20there!%20I'd%20like%20to%20contact%20you%20regarding%20The%20Laughing%20Sherpa." >
+                      href={product.href} >
                       <Button className="w-full bg-white text-black border-2 border-black hover:bg-black hover:text-white transition-colors">
                       Buy Now
                     </Button>
